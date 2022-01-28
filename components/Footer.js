@@ -29,7 +29,7 @@ const Footer = () => {
         <span className="font-light">
           Designed By{" "}
           <Link href="https://shresthapradhuman.com.np/">
-            <a target="_blank">Shrestha Pradhuman</a>
+            <a target="_blank" rel="noopener" >Shrestha Pradhuman</a>
           </Link>
         </span>
       </div>
