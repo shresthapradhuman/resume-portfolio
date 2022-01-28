@@ -2,9 +2,11 @@ import Link from "next/link";
 import { header, menu } from "../data/setting.js";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 const Header = () => {
   const [mobile, setMobile] = useState(false);
+  const router = useRouter();
   const handleMobile = () => {
     setMobile(!mobile);
   };
@@ -29,7 +31,11 @@ const Header = () => {
             {menu.map((item, key) => (
               <Link key={key} href={`/${item}`}>
                 <a
-                  className="mobile-nav-link p-2 text-2xl block capitalize transition-all duration-300"
+                  className={`mobile-nav-link p-2 text-2xl block capitalize transition-all duration-300 ${
+                    router.pathname.replace("/", "") == item
+                      ? "text-orange-600"
+                      : ""
+                  }`}
                   onClick={handleMobileMenu}
                 >
                   {item}
@@ -57,7 +63,13 @@ const Header = () => {
         <div className="nav hidden lg:flex lg:flex-row">
           {menu.map((item, key) => (
             <Link key={key} href={`/${item}`}>
-              <a className="px-4 capitalize text-xl font-light hover:text-orange-400 border-l-2 first:border-l-0">
+              <a
+                className={`px-4 capitalize text-xl font-light hover:text-yellow-600 border-l-2 first:border-l-0 ${
+                  router.pathname.replace("/", "") == item
+                    ? "text-orange-600"
+                    : ""
+                }`}
+              >
                 {item}
               </a>
             </Link>

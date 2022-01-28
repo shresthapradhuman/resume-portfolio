@@ -4,7 +4,7 @@ import { contact, email, follow } from "../data/setting";
 
 const Footer = () => {
   return (
-    <footer className="flex xl:px-20 px-10 p-5 lg:py-10 lg:flex-row lg:justify-between flex-col border-t-2">
+    <footer className="flex xl:px-20 p-5 lg:py-10 lg:flex-row lg:justify-between flex-col border-t-2">
       <div className="flex flex-col mb-5">
         <span className="text-xl font-medium capitalize mb-2">Phone</span>
         <span className="text-l font-normal">{contact}</span>

@@ -22,3 +22,71 @@ body {
     fill: #ff0000;
   }
 }
+
+.react-sweet-progress-symbol {
+  color: #000 !important;
+  font-weight: 500 !important;
+}
+
+.star {
+  @media screen and (max-width: 1024px) {
+    &-ratings {
+      .star-container {
+        padding-left: 0px !important;
+      }
+    }
+    &-container {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
+      svg {
+        width: 25px !important;
+        height: 25px !important;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    &-ratings {
+      .star-container {
+        padding-left: 0px !important;
+      }
+    }
+    &-container {
+      padding-right: 20px !important;
+      padding-left: 20px !important;
+      svg {
+        width: 30px !important;
+        height: 30px !important;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    &-ratings {
+      .star-container {
+        padding-left: 0px !important;
+      }
+    }
+    &-container {
+      padding-right: 10px !important;
+      padding-left: 10px !important;
+      svg {
+        width: 25px !important;
+        height: 25px !important;
+      }
+    }
+  }
+  @media screen and (max-width: 375px) {
+    &-ratings {
+      .star-container {
+        padding-left: 0px !important;
+      }
+    }
+    &-container {
+      padding-right: 10px !important;
+      padding-left: 10px !important;
+      svg {
+        width: 20px !important;
+        height: 20px !important;
+      }
+    }
+  }
+}

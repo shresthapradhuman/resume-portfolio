@@ -29,7 +29,7 @@ export default function Home() {
         <section className="lg:basis-6/12 lg:order-2 lg:pl-2 p-2">
           <span className="lg:text-9xl text-5xl font-bold">Hi!</span>
           <p className="lg:text-2xl text-xl font-light text-justify">{about}</p>
-          <button className="bg-orange-500 p-4 mt-7 lg:px-5 lg:py-3 border border-transparent rounded-md hover:bg-orange-600">
+          <button className="bg-yellow-500 p-4 mt-7 lg:px-5 lg:py-3 border border-transparent rounded-md hover:bg-yellow-600">
             <Link href="/">
               <a
                 className="flex items-center text-base font-medium"
