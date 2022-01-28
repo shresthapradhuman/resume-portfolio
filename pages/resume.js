@@ -4,7 +4,7 @@ import { Education } from "../section/Education";
 import { Experience } from "../section/Experience";
 import { Skills } from "../section/Skills";
 
-const resume = () => {
+const Resume = () => {
   const router = useRouter();
   return (
     <section className="resume w-full px-5 xl:px-20 py-5">
@@ -23,4 +23,4 @@ const resume = () => {
   );
 };
 
-export default resume;
+export default Resume;

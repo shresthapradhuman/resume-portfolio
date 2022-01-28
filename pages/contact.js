@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import ContactForm from "../components/ContactForm";
 
-const contact = () => {
+const Contact = () => {
   let router = useRouter();
   const encode = (data) => {
     return Object.keys(data)
@@ -61,8 +61,8 @@ const contact = () => {
           <Link href="/">
             <a>home</a>
           </Link>
-          <Link href={router.route}>
-            <a>{router.route}</a>
+          <Link href={router.pathname}>
+            <a>{router.pathname}</a>
           </Link>
         </h2>
         <div>
@@ -72,7 +72,7 @@ const contact = () => {
               Looking forward to hearing from you.
             </span>
             <div className="flex flex-wrap">
-              <ContactForm />
+              <ContactForm/>
             </div>
           </div>
         </div>
@@ -81,4 +81,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;
