@@ -8,7 +8,7 @@ export const Layout = ({ children }) => {
       <div className="wrapper py-2">
         <Header />
         <main>{children}</main>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     </>
   );

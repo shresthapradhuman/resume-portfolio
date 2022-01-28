@@ -6,3 +6,19 @@ body {
   background: #f3f3f3;
   height: 100%;
 }
+
+.facebook {
+  :hover {
+    fill: #3b5998;
+  }
+}
+.instagram {
+  &:hover {
+    fill: #e1306c;
+  }
+}
+.youtube {
+  &:hover {
+    fill: #ff0000;
+  }
+}

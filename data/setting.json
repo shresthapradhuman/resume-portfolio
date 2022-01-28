@@ -1,8 +1,0 @@
-{
-  "description": "Resume Portfolio, Blogging Application",
-  "header": {
-    "name": "John Doe",
-    "role": "Web Developer"
-  },
-  "menu": ["resume", "projects", "blog", "contact"]
-}
