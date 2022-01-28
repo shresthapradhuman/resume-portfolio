@@ -19,7 +19,7 @@ const Footer = () => {
         <span className="flex">
           {follow.map((item, key) => (
             <Link href={item.url} key={key}>
-              <a className="first:px-0 px-2">{item.icon}</a>
+              <a className="first:px-0 px-2" aria-label="social links">{item.icon}</a>
             </Link>
           ))}
         </span>

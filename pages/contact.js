@@ -65,15 +65,13 @@ const Contact = () => {
             <a>{router.pathname}</a>
           </Link>
         </h2>
-        <div>
-          <div>
-            <h2 className="text-4xl font-medium mb-2">Get In Touch</h2>
-            <span className="text-xl font-medium">
-              Looking forward to hearing from you.
-            </span>
-            <div className="flex flex-wrap">
-              <ContactForm/>
-            </div>
+        <div className="contact-wrapper">
+          <h2 className="text-4xl font-medium mb-2">Get In Touch</h2>
+          <span className="text-xl font-medium">
+            Looking forward to hearing from you.
+          </span>
+          <div className="flex flex-wrap">
+            <ContactForm />
           </div>
         </div>
       </section>
