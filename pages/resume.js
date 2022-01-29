@@ -6,15 +6,19 @@ import { Skills } from "../section/Skills";
 
 const Resume = () => {
   const router = useRouter();
+  let route = router.route.replace("/", "");
+  let breadcrumbs = route.split(" ");
   return (
-    <section className="resume w-full px-5 xl:px-20 py-5">
-      <h2 className="title text-l font-medium mb-10 capitalize">
+    <section className="resume w-full  px-5 xl:px-20 py-5">
+      <h2 className="title text-l font-light my-5 capitalize">
         <Link href="/">
           <a>home</a>
         </Link>
-        <Link href={router.route}>
-          <a>{router.route}</a>
-        </Link>
+        {breadcrumbs.map((item, key) => (
+          <Link href={`/${item}`} key={key}>
+            <a>{` / ${item}`}</a>
+          </Link>
+        ))}
       </h2>
       <Experience />
       <Education />

@@ -19,7 +19,9 @@ const Footer = () => {
         <span className="flex">
           {follow.map((item, key) => (
             <Link href={item.url} key={key}>
-              <a className="first:px-0 px-2" aria-label="social links">{item.icon}</a>
+              <a className="first:px-0 px-2" aria-label="social links">
+                {item.icon}
+              </a>
             </Link>
           ))}
         </span>
@@ -29,7 +31,9 @@ const Footer = () => {
         <span className="font-light">
           Designed By{" "}
           <Link href="https://shresthapradhuman.com.np/">
-            <a target="_blank" rel="noopener" >Shrestha Pradhuman</a>
+            <a target="_blank" rel="noopener">
+              Shrestha Pradhuman
+            </a>
           </Link>
         </span>
       </div>

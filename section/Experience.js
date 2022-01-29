@@ -3,15 +3,15 @@ import { working } from "../data/setting";
 export const Experience = () => {
   return (
     <div className="experience">
-      <span className="title font-medium text-4xl block mb-5 border-b-2 py-2       ">
+      <h2 className="title text-xl lg:text-2xl lg:font-medium  mb-4 pb-2 border-b-2">
         Experience
-      </span>
+      </h2>
       <ul>
         {working.map((item, key) => (
-          <li key={key} className="xl:px-10 px-5 py-5 shadow mb-4 last:mb-0">
-            <span className="block text-2xl font-medium mb-2">{item.work}</span>
-            <span className="block text-base mb-2">{`${item.from} ~ ${item.to}`}</span>
-            <span className="block text-xl font-light">{item.description}</span>
+          <li key={key} className="mb-4">
+            <h2 className="mb-2 text-base lg:text-lg font-normal">{item.work}</h2>
+            <span className="font-medium text-sm mb-2 block">{`${item.from} ~ ${item.to}`}</span>
+            <p className="font-light text-base pb-2">{item.description}</p>
           </li>
         ))}
       </ul>

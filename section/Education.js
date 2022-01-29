@@ -2,18 +2,20 @@ import { education } from "../data/setting";
 
 export const Education = () => {
   return (
-    <div className="education my-10">
-      <span className="title text-4xl font-medium block mb-10 border-b-2 py-2">
+    <div className="education my-5">
+      <h2 className="title text-xl lg:text-2xl lg:font-medium  mb-4 pb-2 border-b-2">
         Education
-      </span>
+      </h2>
       <ul>
         {education.map((item, key) => (
-          <li key={key} className="xl:px-10 px-5 py-5 shadow mb-4 last:mb-0">
-            <span className="block text-2xl font-medium mb-2">
+          <li key={key} className="mb-4">
+            <h2 className="mb-2 text-base lg:text-lg font-normal">
               {item.school}
+            </h2>
+            <span className="font-medium text-sm mb-2 block">{`${item.from} ~ ${item.to}`}</span>
+            <span className="font-light text-base pb-2">
+              {item.description}
             </span>
-            <span className="block text-base mb-2">{`${item.from} ~ ${item.to}`}</span>
-            <span className="block text-xl font-light">{item.description}</span>
           </li>
         ))}
       </ul>

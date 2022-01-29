@@ -30,7 +30,7 @@ export const follow = [
 
 export const profileImage = {
   alt: "profile image",
-  filename: "profile.jpg",
+  filename: "profile.webp",
 };
 
 export const about =

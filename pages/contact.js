@@ -4,7 +4,9 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
-  let router = useRouter();
+  const router = useRouter();
+  let route = router.route.replace("/", "");
+  let breadcrumbs = route.split(" ");
   const encode = (data) => {
     return Object.keys(data)
       .map(
@@ -57,13 +59,15 @@ const Contact = () => {
   return (
     <>
       <section className="w-full xl:px-20 px-5 py-5">
-        <h2 className="title text-l font-medium mb-10 capitalize">
+        <h2 className="title text-l font-light my-5 capitalize">
           <Link href="/">
             <a>home</a>
           </Link>
-          <Link href={router.pathname}>
-            <a>{router.pathname}</a>
-          </Link>
+          {breadcrumbs.map((item, key) => (
+            <Link href={`/${item}`} key={key}>
+              <a>{` / ${item}`}</a>
+            </Link>
+          ))}
         </h2>
         <div className="contact-wrapper">
           <h2 className="text-4xl font-medium mb-2">Get In Touch</h2>

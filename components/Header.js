@@ -22,10 +22,10 @@ const Header = () => {
           }`}
         >
           <span
-            className="mobile-close absolute top-6 right-10 cursor-pointer lg:hidden"
+            className="mobile-close absolute top-6 right-5 cursor-pointer lg:hidden"
             onClick={handleMobile}
           >
-            <FaTimes size="30px" />
+            <FaTimes size="25px" />
           </span>
           <div className="mobile-nav relative top-1/4 w-full text-center mt-7">
             {menu.map((item, key) => (
@@ -47,8 +47,8 @@ const Header = () => {
         <div className="brand">
           <Link href="/">
             <a>
-              <span className="name text-4xl">{header.name}</span>
-              <span className="role text-xl font-light ml-1">
+              <span className="name text-2xl lg:text-3xl font-medium">{header.name}</span>
+              <span className="role text-base font-light ml-1">
                 {header.role}
               </span>
             </a>
@@ -58,7 +58,7 @@ const Header = () => {
           className="hamburger cursor-pointer lg:hidden"
           onClick={handleMobile}
         >
-          <FaBars size="30px" />
+          <FaBars size="25px" />
         </span>
         <div className="nav hidden lg:flex lg:flex-row">
           {menu.map((item, key) => (

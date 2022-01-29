@@ -60,7 +60,7 @@ export default function ContactForm() {
         name="contact"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        className="xl:basis-6/12 basis-full py-10"
+        className="xl:basis-6/12 basis-full mt-5"
       >
         <div>
           <Field type="hidden" name="form-name" />
@@ -113,7 +113,7 @@ export default function ContactForm() {
             <ErrorMessage name="message" />
           </div>
         </div>
-        <button className="py-2 px-4 bg-indigo-600 text-xl text-white rounded-sm"type="submit">Send Message</button>
+        <button className="py-2 px-4 bg-orange-400 text-xl font-medium rounded-md"type="submit">Send Message</button>
       </Form>
     </Formik>
   );
