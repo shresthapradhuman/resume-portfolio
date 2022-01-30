@@ -60,7 +60,7 @@ export default function ContactForm() {
         name="contact"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        className="xl:basis-6/12 basis-full mt-5"
+        className=" basis-full mt-5"
       >
         <div>
           <Field type="hidden" name="form-name" />

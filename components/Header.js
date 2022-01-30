@@ -64,7 +64,7 @@ const Header = () => {
           {menu.map((item, key) => (
             <Link key={key} href={`/${item}`}>
               <a
-                className={`px-4 capitalize text-xl font-light hover:text-yellow-600 border-l-2 first:border-l-0 ${
+                className={`px-4 capitalize text-xl font-light hover:text-yellow-600 border-l-2 first:border-l-0 last:pr-0 ${
                   router.pathname.replace("/", "") == item
                     ? "text-orange-600"
                     : ""
