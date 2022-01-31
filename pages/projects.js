@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import useSWR from "swr";
@@ -40,6 +41,15 @@ const Projects = () => {
             <Link href={item.html_url} key={key}>
               <a>
                 <div className="py-2 border mb-5 md:mb-0">
+                  <Image
+                    alt={item.name}
+                    src={`/images/project/${item.name}.png`}
+                    width="100"
+                    height="100"
+                    layout="responsive"
+                    className="w-full object-cover"
+                  />
+                  
                   <h2 className="text-xl text-center uppercase mb-2">
                     {item.name.slice(0, 20)}
                   </h2>
