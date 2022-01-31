@@ -104,7 +104,7 @@ export const coding = [
     percent: 90,
   },
   {
-    title: "SASS",
+    title: "SCSS",
     percent: 80,
   },
   {

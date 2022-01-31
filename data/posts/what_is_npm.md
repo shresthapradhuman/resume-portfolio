@@ -11,6 +11,8 @@ Either you can build it from scratch, writing every single line of code.
 You can build from other code and modify them according to your needs. But where would you get all these codes for your application?
 Here what comes in handy is a package manager. It's like a code store from where you can get a different package of code and modify it for yourself by passing attributes and values.
 
+![alt npm](/images/posts/npm.png)
+
 So, today's topic is NPM (Node Package Manager) - which is the default package manager for Javascript runtime Node.js.
 
 NPM consists of two things.
